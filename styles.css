@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  background: linear-gradient(to bottom right, #340644, #340644); /* Linear gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Profile Section */
+.profile-section {
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600; /* Medium font weight */
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.profile-section p {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+/* Cards Section */
+.links {
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card-text {
+  flex-grow: 1;
+  font-size: 16px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500; /* Medium font weight */
+}
+
+/* Jiggle effect for the Telegram card */
+.jiggle {
+  animation: jiggle-animation 5s ease-in-out infinite;
+}
+
+@keyframes jiggle-animation {
+  0%, 71.42% { /* No jiggle for 5 seconds (0 to 71.42% of 7s) */
+    transform: rotate(0deg);
+  }
+  75% { /* Jiggle starts */
+    transform: rotate(-3deg);
+  }
+  80% {
+    transform: rotate(3deg);
+  }
+  85% {
+    transform: rotate(-3deg);
+  }
+  90% {
+    transform: rotate(3deg);
+  }
+  100% { /* Reset back to original position */
+    transform: rotate(0deg);
+  }
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 34px;
+  color: #fff;
+}
+
+.social-icons a:hover {
+  color: #d3a775; /* Light gold */
+}
+
+/* Banner Section */
+.banner-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Limit height for responsiveness */
+  overflow: hidden;
+  margin-bottom: 20px; /* Spacing below the banner */
+}
+
+.banner-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire container */
+  border-radius: 15px; /* Optional: round the corners */
+}
+
+.profile-logo {
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 15px;
+  object-fit: contain; /* Ensures the logo fits within its boundaries */
+}
+
+.banner-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Adjust the value for more or less curve */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better aesthetics */
+}
