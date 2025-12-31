@@ -9,7 +9,6 @@ body {
   background: linear-gradient(
     to bottom,
     #ff9933,   /* Orange */
-    #ffffff,   /* White */
     #138808    /* Green */
   );
   display: flex;
