@@ -5,8 +5,13 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif; /* Use Poppins font */
-  background: linear-gradient(to bottom right, #340644, #340644); /* Linear gradient background */
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #ff9933,   /* Orange */
+    #ffffff,   /* White */
+    #138808    /* Green */
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +40,7 @@ body {
 
 h1 {
   font-size: 24px;
-  font-weight: 600; /* Medium font weight */
+  font-weight: 600;
   margin-bottom: 5px;
   color: #fff;
 }
@@ -59,7 +64,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -74,19 +79,19 @@ h1 {
   margin-left: 10px;
   text-decoration: none;
   color: #333;
-  font-weight: 500; /* Medium font weight */
+  font-weight: 500;
 }
 
-/* Jiggle effect for the Telegram card */
+/* Jiggle effect */
 .jiggle {
   animation: jiggle-animation 5s ease-in-out infinite;
 }
 
 @keyframes jiggle-animation {
-  0%, 71.42% { /* No jiggle for 5 seconds (0 to 71.42% of 7s) */
+  0%, 71.42% {
     transform: rotate(0deg);
   }
-  75% { /* Jiggle starts */
+  75% {
     transform: rotate(-3deg);
   }
   80% {
@@ -98,7 +103,7 @@ h1 {
   90% {
     transform: rotate(3deg);
   }
-  100% { /* Reset back to original position */
+  100% {
     transform: rotate(0deg);
   }
 }
@@ -117,36 +122,36 @@ h1 {
 }
 
 .social-icons a:hover {
-  color: #d3a775; /* Light gold */
+  color: #d3a775;
 }
 
 /* Banner Section */
 .banner-section {
   position: relative;
   width: 100%;
-  height: auto;
-  max-height: 300px; /* Limit height for responsiveness */
+  max-height: 300px;
   overflow: hidden;
-  margin-bottom: 20px; /* Spacing below the banner */
+  margin-bottom: 20px;
 }
 
 .banner-video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire container */
-  border-radius: 15px; /* Optional: round the corners */
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 .profile-logo {
-  width: 100px; /* Adjust width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 100px;
+  height: auto;
   margin-bottom: 15px;
-  object-fit: contain; /* Ensures the logo fits within its boundaries */
+  object-fit: contain;
 }
 
 .banner-photo {
-    width: 100%;
-    height: auto;
-    border-radius: 20px; /* Adjust the value for more or less curve */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better aesthetics */
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
